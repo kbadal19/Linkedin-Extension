@@ -75,12 +75,6 @@ function createUi(ctx: any) {
         // Inject Tailwind CSS into shadow root
         injectTailwindIntoShadowRoot(shadowRoot);
         injectTailwindIntoDocument();
-
-        // Add a paragraph element with Tailwind classes
-        const p = document.createElement("p");
-        p.classList.add("text-lg", "text-red-500", "font-bold", "p-8");
-        p.textContent = "Hello from shadow root with Tailwind CSS applied!";
-        uiContainer.append(p);
       } catch (error) {
         console.error("Error during UI mount:", error);
       }
